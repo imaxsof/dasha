@@ -1,15 +1,30 @@
-![Интерфейс](https://mahoweek.com/img/interface.png?v=4)
+# empty-project-vue
 
-# [Mahoweek](https://mahoweek.com)
+Empty project.
 
-Веб-приложение по ведению краткосрочного плана дел. Поможет просто организовать список задач и наметить на календарной сетке даты их выполнения на одну-две недели вперёд.
+## Building and running on localhost
 
-Mahoweek полностью бесплатен, не перенасыщен функционалом и одинаково хорошо выглядит как на ноутбуке, так и на телефоне. Его можно добавить на домашний экран и использовать как мобильное приложение для Айос или Андроид.
+First install dependencies:
 
-Составляйте списки личных дел и проектов, организуйте план путешествия, работы и учёбы, планируйте встречи и поездки, ставьте цели и напоминания о событиях и ещё многое другое.
+```sh
+npm install
+```
 
-∼∼∼
+To create a production build:
 
-Любые вопросы, предложения, сомнения, критика или замечания помогают нам стать лучше, а вам — счастливее. Пишите на электронную почту app@mahoweek.com или в соцсетях [ВКонтакте](https://vk.com/mahoweek), [Фейсбук](https://fb.com/mahoweekapp) и [Твиттер](https://twitter.com/mahoweek).
+```sh
+npm run build-prod
+```
 
-Автор и разработчик [Максим Софронов](https://github.com/imaxsof).
+To create a development build:
+
+```sh
+npm run build-dev
+```
+
+## Running
+
+```sh
+node dist/bundle.js
+```
+
