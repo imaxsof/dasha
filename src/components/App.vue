@@ -1,14 +1,21 @@
 <template>
-  <h1>{{ message }}</h1>
+	<div>
+		<TodoLists/>
+		<hr>
+		<TodoTaskAdd/>
+	</div>
 </template>
 
 <script>
-export default {
-  name: 'app',
-  data() {
-    return {
-      message: 'хелло'
-    };
-  }
-};
+	import { mapState } from 'vuex';
+	import TodoLists from './TodoLists.vue';
+	import TodoTaskAdd from './TodoTaskAdd.vue';
+
+	export default {
+		name: 'app',
+		components: {
+			TodoLists,
+			TodoTaskAdd
+		}
+	};
 </script>
