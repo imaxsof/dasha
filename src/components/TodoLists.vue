@@ -3,7 +3,7 @@
 		<li
 			v-for="list in lists"
 			:key="list.id">
-			{{ list.name }}
+			{{ list.name }} ({{ tasksCount(list.id) }})
 
 			<TodoTasks :list-id="list.id"/>
 		</li>
@@ -11,16 +11,19 @@
 </template>
 
 <script>
-	import { mapState } from 'vuex';
 	import TodoTasks from './TodoTasks.vue';
+	import { mapGetters } from 'vuex';
 
 	export default {
 		name: 'TodoLists',
 		components: {
 			TodoTasks
 		},
-		computed: mapState({
-			lists: state => state.lists
-		})
+		computed: {
+			...mapGetters({
+				lists: 'getLists',
+				tasksCount: 'getCountTasksByListId'
+			})
+		}
 	};
 </script>

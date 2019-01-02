@@ -7,7 +7,6 @@
 </template>
 
 <script>
-	import { mapState } from 'vuex';
 	import TodoLists from './TodoLists.vue';
 	import TodoTaskAdd from './TodoTaskAdd.vue';
 

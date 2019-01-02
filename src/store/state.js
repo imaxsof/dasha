@@ -1,10 +1,4 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import App from './App.vue';
-
-Vue.use(Vuex);
-
-let mwStorage = {
+export default {
 	lists: [
 		{
 			id: 'rtg65d',
@@ -41,29 +35,3 @@ let mwStorage = {
 		theme: 'dark'
 	}
 }
-
-let store = new Vuex.Store({
-	state: mwStorage,
-	// actions: {
-	// 	addNote({commit}, note) {
-	// 		commit('ADD_NOTE', note)
-	// 	}
-	// },
-	// mutations: {
-	// 	addTask(state, newTask) {
-	// 		state.tasks.push(newTask);
-	// 	}
-	// },
-	// getters: {
-	// 	notes(state) {
-	// 		return state.notes
-	// 	}
-	// },
-	// modules: {}
-})
-
-new Vue({
-	el: '#app',
-	store,
-	render: h => h(App)
-});
