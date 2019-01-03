@@ -1,8 +1,11 @@
 export default {
+	initState(state, data) {
+		state.storage = data;
+	},
 	addList(state, data) {
-		state.lists.push(data);
+		state.storage.lists.push(data);
 	},
 	addTask(state, data) {
-		state.tasks.push(data);
+		state.storage.tasks.push(data);
 	}
 }

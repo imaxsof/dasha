@@ -1,19 +1,15 @@
 export default {
 	getLists: (state) => {
-		return state.lists;
+		return state.storage.lists;
 	},
 
 	getTasks: (state) => {
-		return state.tasks;
+		return state.storage.tasks;
 	},
 	getTasksByListId: state => data => {
-		return state.tasks.filter(el => el.listId === data);
+		return state.storage.tasks.filter(el => el.listId === data);
 	},
 	getCountTasksByListId: state => data => {
-		return state.tasks.filter(el => el.listId === data).length;
-	},
-
-	getSettings: (state) => {
-		return state.settings;
+		return state.storage.tasks.filter(el => el.listId === data).length;
 	}
 }
