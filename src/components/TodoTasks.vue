@@ -24,3 +24,7 @@
 		}
 	};
 </script>
+
+<style lang="less">
+	@import (reference) "../assets/less/global";
+</style>

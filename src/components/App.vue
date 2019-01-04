@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="">
 		<TodoLists/>
 		<hr>
 		<TodoTaskAdd/>
@@ -18,3 +18,7 @@
 		}
 	};
 </script>
+
+<style lang="less">
+	@import "../assets/less/global";
+</style>
