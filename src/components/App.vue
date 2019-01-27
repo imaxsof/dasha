@@ -1,8 +1,12 @@
 <template>
-	<div class="">
-		<TodoLists/>
-		<hr>
-		<TodoTaskAdd/>
+	<div class="app">
+		<main class="app__lists">
+			<todo-lists/>
+		</main>
+
+		<div class="app__new">
+			<todo-task-add/>
+		</div>
 	</div>
 </template>
 
